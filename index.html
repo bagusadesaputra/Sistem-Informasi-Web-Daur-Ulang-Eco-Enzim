@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="abyss" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,82 +14,117 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>Greenzyme.id</title>
+    <title>Re:Life</title>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="navbar bg-base-100 shadow-sm">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+      <div class="drawer">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <!-- Navbar -->
+          <div class="navbar bg-base-200 w-full">
+            <div class="flex-none lg:hidden">
+              <label
+                for="my-drawer-2"
+                aria-label="open sidebar"
+                class="btn btn-square btn-ghost"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  class="inline-block h-6 w-6 stroke-current"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
                 </svg>
-              </div>
-              <ul
-                tabindex="-1"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Tentang Kami</a></li>
-                <li>
-                  <a>Layanan</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Kontak Kami</a></li>
+              </label>
+            </div>
+            <div class="mx-2 flex-1 px-2"><a class="btn btn-ghost text-xl font-bold">Re:Life</a></div>
+            <div class="hidden flex-none lg:block">
+              <ul class="menu menu-horizontal">
+                <!-- Navbar menu content here -->
+                <li><a>Navbar Item 1</a></li>
+                <li><a>Navbar Item 2</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Greenzyme.id</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Tentang Kami</a></li>
-              <li>
-                <details>
-                  <summary>Layanan</summary>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a>Kontak Kami</a></li>
-            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <div
-      class="hero min-h-screen"
-      style="background-image: url(img/matthew-smith-Rfflri94rs8-unsplash.jpg)"
-    >
-      <div class="hero-overlay"></div>
-      <div class="hero-content text-neutral-content text-center">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Kita #HijaukanBumi</h1>
-          <p class="mb-5">
-            Yuk, jadi bagian dari komunitas peduli bumi dan sebarkan manfaat
-            eco-enzyme ke seluruh Indonesia!
-          </p>
-          <button class="btn btn-soft btn-success">Get Started</button>
+        <div class="drawer-side">
+          <label
+            for="my-drawer-2"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <ul class="menu bg-base-200 min-h-full w-80 p-4">
+            <!-- Sidebar content here -->
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </header>
+    <main>
+      <!--hero-->
+      <div
+        class="hero min-h-screen"
+        style="
+          background-image: url(img/matthew-smith-Rfflri94rs8-unsplash.jpg);
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Kita <span class="text-success">#Hijaukan</span>Bumi</h1>
+            <p class="mb-5">
+              Yuk, jadi bagian dari komunitas peduli bumi dan sebarkan manfaat
+              eco-enzim ke seluruh Indonesia!
+            </p>
+            <button class="btn btn-soft btn-success">Ayo Join!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 1 -->
+      <section class="bg-base-200 flex flex-col md:flex-row items-center gap-8 px-6 py-16">
+        <!-- gambar -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="img/pexels-yankrukov-5479034.jpg"
+            alt="Eco Enzim"
+            class="rounded-xl w-full h-auto object-cover"
+          />
+        </div>
+
+        <!-- teks -->
+        <div class="w-full md:w-1/2">
+          <h2 class="mb-5 text-4xl font-bold">
+            Misi Kami Menyediakan Akses Daur Ulang Bagi Semua Orang.
+          </h2>
+          <p class="font-light mb-3">
+            Setiap tahun, jutaan ton sampah organik terbuang percuma, padahal di
+            dalamnya tersimpan potensi besar untuk bumi yang lebih bersih dan
+            sehat. Melalui eco enzim, kami percaya bahwa setiap rumah tangga
+            dapat menjadi bagian dari solusi, bukan sumber masalah. Namun
+            kenyataannya, infrastruktur pengelolaan sampah organik di Indonesia
+            masih terbatas.
+          </p>
+          <p class="font-light">
+            Di sisi lain, kita memiliki jutaan pengepul, pemulung, dan komunitas
+            lokal yang sudah lama berperan dalam rantai daur ulang, mereka
+            adalah fondasi nyata gerakan keberlanjutan. Kami melihat potensi
+            besar di sana, bukan membangun sistem baru dari nol, tetapi
+            memberdayakan jaringan yang sudah ada agar dapat mengolah limbah
+            organik menjadi sesuatu yang bernilai. Karena kami percaya, setiap
+            tetes eco enzim adalah langkah kecil menuju bumi yang lebih baik.
+          </p>
+        </div>
+      </section>
+    </main>
 
     <footer
       class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10"
@@ -143,9 +178,7 @@
         </div>
       </nav>
       <aside>
-        <p>
-          Copyright ©
-        </p>
+        <p>Copyright ©</p>
       </aside>
     </footer>
   </body>
