@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html data-theme="abyss" lang="en">
+<html data-theme="emerald" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Paksa font lewat CSS -->
+    <style>
+      :root,
+      html,
+      body {
+        font-family: "inter", sans-serif !important;
+      }
+    </style>
+
     <title>Re:Life</title>
   </head>
+
   <body>
     <header>
       <div class="drawer">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <!-- Navbar -->
-          <div class="navbar bg-base-200 w-full">
+          <div class="navbar bg-base-100 w-full">
             <div class="flex-none lg:hidden">
               <label
                 for="my-drawer-2"
@@ -44,7 +65,9 @@
                 </svg>
               </label>
             </div>
-            <div class="mx-2 flex-1 px-2"><a class="btn btn-ghost text-xl font-bold">Re:Life</a></div>
+            <div class="mx-2 flex-1 px-2">
+              <a class="btn btn-ghost text-xl font-light">Re:Life</a>
+            </div>
             <div class="hidden flex-none lg:block">
               <ul class="menu menu-horizontal">
                 <!-- Navbar menu content here -->
@@ -69,7 +92,7 @@
       </div>
     </header>
     <main>
-      <!--hero-->
+      <!-- hero -->
       <div
         class="hero min-h-screen"
         style="
@@ -79,7 +102,9 @@
         <div class="hero-overlay"></div>
         <div class="hero-content text-neutral-content text-center">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Kita <span class="text-success">#Hijaukan</span>Bumi</h1>
+            <h1 class="mb-5 text-5xl font-bold">
+              Mari Kita <span class="text-success">#Hijaukan</span>Bumi
+            </h1>
             <p class="mb-5">
               Yuk, jadi bagian dari komunitas peduli bumi dan sebarkan manfaat
               eco-enzim ke seluruh Indonesia!
@@ -90,7 +115,9 @@
       </div>
 
       <!-- section 1 -->
-      <section class="bg-base-200 flex flex-col md:flex-row items-center gap-8 px-6 py-16">
+      <section
+        class="bg-base-100 flex flex-col md:flex-row items-center gap-8 p-16"
+      >
         <!-- gambar -->
         <div class="w-full md:w-1/2">
           <img
@@ -102,7 +129,7 @@
 
         <!-- teks -->
         <div class="w-full md:w-1/2">
-          <h2 class="mb-5 text-4xl font-bold">
+          <h2 class="mb-5 text-4xl font-bold text-success">
             Misi Kami Menyediakan Akses Daur Ulang Bagi Semua Orang.
           </h2>
           <p class="font-light mb-3">
@@ -127,7 +154,7 @@
     </main>
 
     <footer
-      class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10"
+      class="footer footer-horizontal footer-center bg-base-100 text-base-content rounded p-10"
     >
       <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover">Tentang Kami</a>
