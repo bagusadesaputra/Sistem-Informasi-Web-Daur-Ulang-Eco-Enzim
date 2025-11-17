@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="emerald" lang="en">
+<html data-theme="cupcake" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,25 +25,18 @@
       type="text/css"
     />
 
-    <!-- Paksa font lewat CSS -->
-    <style>
-      :root,
-      html,
-      body {
-        font-family: "inter", sans-serif !important;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Re:Life</title>
   </head>
 
-    <body>
+  <body>
     <header>
       <div class="drawer">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <!-- Navbar -->
-          <div class="navbar bg-base-200 w-full">
+          <div class="navbar bg-base-100 w-full">
             <div class="flex-none lg:hidden">
               <label
                 for="my-drawer-2"
@@ -71,8 +64,7 @@
             <div class="hidden flex-none lg:block">
               <ul class="menu menu-horizontal">
                 <!-- Navbar menu content here -->
-                <li><a>Navbar Item 1</a></li>
-                <li><a>Navbar Item 2</a></li>
+                <li><a>Blog</a></li>
               </ul>
             </div>
           </div>
@@ -85,8 +77,7 @@
           ></label>
           <ul class="menu bg-base-200 min-h-full w-80 p-4">
             <!-- Sidebar content here -->
-            <li><a>Sidebar Item 1</a></li>
-            <li><a>Sidebar Item 2</a></li>
+            <li><a>Blog</a></li>
           </ul>
         </div>
       </div>
@@ -114,43 +105,47 @@
         </div>
       </div>
       <!-- section 1 -->
-      <section class="py-16 px-6 bg-base-200">
+      <section class="py-16 px-6 bg-base-100">
         <div class="max-w-7xl mx-auto">
-          <!-- Header Section -->
           <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">Tentang Kami</h2>
+            <h2 class="text-4xl font-bold">Tentang Kami</h2>
             <div class="w-24 h-1 bg-success mx-auto mt-6 rounded-full"></div>
           </div>
-          <div
-            class="bg-base-200 flex flex-col md:flex-row-reverse items-center gap-8 px-6 py-16"
-          >
-            <!-- gambar -->
-            <div class="w-full md:w-1/2">
+
+          <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="w-full md:w-1/2 flex justify-center">
               <img
-                src="img/gogreengraphic.png"
+                src="img/hannah-busing-Zyx1bK9mqmA-unsplash.jpg"
                 alt="logo"
-                class="rounded-xl w-full h-auto object-cover"
+                class="rounded-xl w-4/5 md:w-3/4 h-auto object-cover shadow-md"
               />
             </div>
-            <!-- teks -->
-            <div class="w-full md:w-1/2">
-              <h2 class="mb-5 text-4xl font-bold">
-                Siapa kami dan apa yang kami perjuangkan
+
+            <div class="w-full md:w-1/2 max-w-xl">
+              <h2
+                class="text-2xl font-semibold mb-6 leading-snug max-w-3xl mx-auto"
+              >
+                Siapa kami dan apa yang kami perjuangkan?
               </h2>
-              <p class="font-light mb-3">
+              <p class="font-light leading-relaxed">
                 Kami adalah komunitas yang percaya bahwa perubahan besar dimulai
                 dari langkah kecil. Berawal dari kepedulian terhadap semakin
                 menumpuknya sampah organik di sekitar kita, kami berkomitmen
                 untuk menghadirkan solusi nyata melalui pengelolaan limbah yang
-                berkelanjutan. Dengan mengedukasi masyarakat tentang pentingnya
-                daur ulang dan pemanfaatan eco-enzim, kami ingin membangun
-                kesadaran bahwa menjaga bumi bukan tugas segelintir orang, tapi
-                tanggung jawab kita semua. Kami bekerja sama dengan masyarakat,
+                berkelanjutan.
+              </p>
+
+              <p class="font-light leading-relaxed mt-4">
+                Dengan mengedukasi masyarakat tentang pemanfaatan eco-enzim,
+                kami ingin membangun kesadaran bahwa menjaga bumi adalah
+                tanggung jawab bersama. Kami bekerja dengan masyarakat,
                 komunitas lokal, dan pelaku usaha untuk menciptakan ekosistem
-                yang saling mendukung di mana setiap sampah bisa menjadi sumber
-                kehidupan baru bagi bumi. Karena kami percaya, bumi yang lebih
-                hijau bukan sekadar impian, tapi hasil dari tindakan nyata
-                bersama.
+                yang saling mendukung.
+              </p>
+
+              <p class="font-light leading-relaxed mt-4">
+                Bumi yang lebih hijau bukan sekadar impian, itu hasil dari
+                tindakan nyata bersama.
               </p>
             </div>
           </div>
@@ -158,55 +153,75 @@
       </section>
 
       <!-- Section 2 -->
-      <section class="bg-base-200 py-20 px-6">
-        <div class="max-w-7xl mx-auto bg-base-100 rounded-2xl shadow-md p-10">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4">Visi & Misi Kami</h2>
-            <div class="w-24 h-1 bg-success mx-auto rounded-full"></div>
+      <section class="bg-base-200 py-16 px-6">
+        <div class="max-w-6xl mx-auto bg-base-100 rounded-2xl shadow p-12">
+          <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold mb-3">Visi & Misi Kami</h2>
+            <div class="w-20 h-1 bg-success mx-auto rounded-full"></div>
           </div>
 
           <!-- Visi -->
-          <div class="text-center mb-16 space-y-4">
-            <h3 class="text-2xl font-semibold">Visi Kami</h3>
-            <p class="max-w-3xl mx-auto font-light leading-relaxed">
-              Menjadi gerakan masyarakat yang mendorong perubahan menuju gaya
-              hidup berkelanjutan dengan memanfaatkan potensi limbah organik,
-              membangun kesadaran lingkungan, serta menciptakan ekosistem hijau
-              yang harmonis antara manusia dan alam.
-            </p>
-          </div>
+          <div
+            class="flex flex-col-reverse md:flex-row items-center gap-10 mb-20"
+          >
+            <div class="w-full md:w-1/2 md:text-left text-left space-y-4">
+              <h3 class="text-2xl font-semibold">
+                Visi Kami Membangun Ekosistem Hidup yang Lebih Berkelanjutan
+              </h3>
 
-          <!-- Misi -->
-          <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+              <p class="font-light leading-relaxed">
+                Kami berfokus pada terciptanya masyarakat yang lebih sadar
+                lingkungan, mampu memanfaatkan limbah organik menjadi sesuatu
+                yang bermanfaat, serta membangun budaya hidup yang selaras
+                dengan alam.
+              </p>
+
+              <p class="font-light leading-relaxed">
+                Pendekatan tersebut bertujuan mendorong perubahan yang
+                konsisten, di mana setiap individu melihat limbah sebagai sumber
+                daya yang dapat digunakan kembali. Dengan cara ini, kesadaran
+                lingkungan tidak berhenti pada teori, tetapi diterapkan dalam
+                tindakan nyata yang mendukung keberlanjutan jangka panjang.
+              </p>
+            </div>
+
             <div class="w-full md:w-1/2">
               <img
-                src="img/pexels-yankrukov-5479034.jpg"
-                alt="Eco Enzim"
+                src="img/steven-weeks-DUPFowqI6oI-unsplash.jpg"
+                alt="Visi"
                 class="rounded-xl w-full h-auto object-cover hover:shadow-lg transition-shadow duration-300"
               />
             </div>
+          </div>
 
-            <div class="w-full md:w-1/2 md:text-left text-center space-y-4">
-              <h3 class="text-2xl font-semibold mb-3">
+          <!-- Misi -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="img/pexels-yankrukov-5479034.jpg"
+                alt="Eco Enzim"
+                class="rounded-xl w-full object-cover hover:shadow-lg transition-shadow duration-300"
+              />
+            </div>
+
+            <div class="space-y-5">
+              <h3 class="text-2xl font-semibold">
                 Misi Kami Menyediakan Akses Daur Ulang Bagi Semua Orang
               </h3>
+
               <p class="font-light leading-relaxed">
                 Setiap tahun, jutaan ton sampah organik terbuang percuma,
                 padahal di dalamnya tersimpan potensi besar untuk bumi yang
-                lebih bersih dan sehat. Melalui eco enzim, kami percaya bahwa
-                setiap rumah tangga dapat menjadi bagian dari solusi, bukan
-                sumber masalah. Namun kenyataannya, infrastruktur pengelolaan
-                sampah organik di Indonesia masih terbatas.
+                lebih bersih dan sehat. Melalui eco enzim, rumah tangga dapat
+                menjadi bagian dari solusi, bukan sumber masalah.
               </p>
+
               <p class="font-light leading-relaxed">
-                Di sisi lain, kita memiliki jutaan pengepul, pemulung, dan
-                komunitas lokal yang sudah lama berperan dalam rantai daur
-                ulang. Mereka adalah fondasi nyata gerakan keberlanjutan. Kami
-                melihat potensi besar di sana — bukan membangun sistem baru dari
-                nol, tetapi memberdayakan jaringan yang sudah ada agar dapat
-                mengolah limbah organik menjadi sesuatu yang bernilai. Karena
-                kami percaya, setiap tetes eco enzim adalah langkah kecil menuju
-                bumi yang lebih baik.
+                Jutaan pengepul, pemulung, dan komunitas lokal telah lama
+                menopang rantai daur ulang. Potensi mereka lebih efektif
+                diberdayakan daripada membangun sistem baru dari nol. Setiap
+                tetes eco enzim menjadi langkah kecil menuju bumi yang lebih
+                baik.
               </p>
             </div>
           </div>
@@ -224,189 +239,223 @@
             <div class="w-24 h-1 bg-success mx-auto mt-6 rounded-full"></div>
           </div>
 
-          <div class="flex flex-col lg:flex-row items-center gap-10">
-            <!-- Text-->
-            <div class="lg:w-1/2">
-              <div class="bg-base-200 p-8 rounded-2xl shadow-lg">
-                <p class="opacity-80 text-lg mb-6 leading-relaxed">
-                  <span class="font-bold text-success">Eco-Enzim</span> adalah
-                  hasil fermentasi alami dari limbah organik (sisa buah dan
-                  sayuran) dengan gula dan air. Proses sederhana ini
-                  menghasilkan cairan multiguna yang dapat digunakan sebagai
-                  pembersih alami, pupuk organik, dan penyubur tanah.
-                </p>
-                <p class="opacity-80 text-lg mb-8 leading-relaxed">
-                  Dengan memanfaatkan
-                  <span class="font-semibold text-success">sampah dapur</span>
-                  yang biasanya berakhir di TPA, kita tidak hanya mengurangi
-                  beban lingkungan tetapi juga menciptakan produk bernilai
-                  tinggi yang ramah lingkungan.
-                </p>
+          <div class="flex flex-col items-center gap-10">
+            <!-- Text -->
+            <div class="bg-base-200 p-8 rounded-2xl shadow-lg">
+              <p class="opacity-80 text-lg mb-6 leading-relaxed">
+                <span class="font-bold text-success">Eco-Enzim</span> adalah
+                hasil fermentasi alami dari limbah organik (sisa buah dan
+                sayuran) dengan gula dan air. Proses sederhana ini menghasilkan
+                cairan multiguna yang dapat digunakan sebagai pembersih alami,
+                pupuk organik, dan penyubur tanah.
+              </p>
+              <p class="opacity-80 text-lg mb-8 leading-relaxed">
+                Dengan memanfaatkan
+                <span class="font-semibold text-success">sampah dapur</span>
+                yang biasanya berakhir di TPA, kita tidak hanya mengurangi beban
+                lingkungan tetapi juga menciptakan produk bernilai tinggi yang
+                ramah lingkungan.
+              </p>
 
-                <!-- Features List -->
-                <ul class="space-y-4">
-                  <li class="flex items-start">
-                    <div class="bg-success rounded-full p-2 mr-3 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <span class="font-semibold"
-                        >Pengolahan Limbah Organik</span
-                      >
-                      <p class="opacity-70 text-sm mt-1">
-                        Mengubah sampah dapur menjadi produk bernilai tinggi.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="flex items-start">
-                    <div class="bg-success rounded-full p-2 mr-3 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <span class="font-semibold"
-                        >Pembersih Alami Ramah Lingkungan</span
-                      >
-                      <p class="opacity-70 text-sm mt-1">
-                        Sebagai pengganti pembersih kimia yang aman untuk
-                        keluarga dan lingkungan.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="flex items-start">
-                    <div class="bg-success rounded-full p-2 mr-3 mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <span class="font-semibold"
-                        >Pupuk Organik Berkualitas</span
-                      >
-                      <p class="opacity-70 text-sm mt-1">
-                        Meningkatkan kesuburan tanah dan pertumbuhan tanaman
-                        secara alami.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+              <!-- Features List -->
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-semibold">Pengolahan Limbah Organik</span>
+                    <p class="opacity-70 text-sm mt-1">
+                      Mengubah sampah dapur menjadi produk bernilai tinggi.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-semibold"
+                      >Pembersih Alami Ramah Lingkungan</span
+                    >
+                    <p class="opacity-70 text-sm mt-1">
+                      Sebagai pengganti pembersih kimia yang aman untuk keluarga
+                      dan lingkungan.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-semibold">Pupuk Organik Berkualitas</span>
+                    <p class="opacity-70 text-sm mt-1">
+                      Meningkatkan kesuburan tanah dan pertumbuhan tanaman
+                      secara alami.
+                    </p>
+                  </div>
+                </li>
+              </ul>
 
-                <!-- Statistik -->
-                <div
-                  class="mt-10 pt-6 border-t border-base-300 grid grid-cols-2 gap-4"
-                >
-                  <div class="text-center">
-                    <p class="text-3xl font-bold text-success">70%</p>
-                    <p class="opacity-70">Sampah Organik Rumah Tangga</p>
-                  </div>
-                  <div class="text-center">
-                    <p class="text-3xl font-bold text-success">90%</p>
-                    <p class="opacity-70">Pengurangan Limbah Kimia</p>
-                  </div>
+              <!-- Statistik -->
+              <div
+                class="mt-10 pt-6 border-t border-base-300 grid grid-cols-2 gap-4"
+              >
+                <div class="text-center">
+                  <p class="text-3xl font-bold text-success">70%</p>
+                  <p class="opacity-70">Sampah Organik Rumah Tangga</p>
+                </div>
+                <div class="text-center">
+                  <p class="text-3xl font-bold text-success">90%</p>
+                  <p class="opacity-70">Pengurangan Limbah Kimia</p>
                 </div>
               </div>
             </div>
-
-            <!-- Image -->
-            <div class="lg:w-1/2">
-              <div class="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
-                  alt="Proses pembuatan eco-enzym"
-                  class="rounded-2xl shadow-lg w-full h-auto mb"
-                  loading="lazy"
-                />
-                <div
-                  class="mt-10 bg-success text-white p-6 rounded-2xl shadow-lg max-w-xs text-center mx-auto"
-                >
-                  <h3 class="font-bold text-lg mb-2">Manfaat Eco-Enzim</h3>
-                  <p class="text-sm">
-                    Mengurangi sampah organik, membersihkan udara dan air, serta
-                    meningkatkan kesuburan tanah.
+            <!-- Info Cards -->
+            <!-- Card Header -->
+            <div
+              class="bg-success text-white p-6 rounded-2xl shadow-lg text-center mx-auto w-full"
+            >
+              <h3 class="font-bold text-lg mb-2">Manfaat Eco-Enzim</h3>
+              <p class="text-sm">
+                Mengurangi sampah organik, membersihkan udara dan air, serta
+                meningkatkan kesuburan tanah.
+              </p>
+            </div>
+            <!-- Stacked Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 w-full mx-auto">
+              <div
+                class="bg-base-200 p-4 rounded-xl shadow-md flex items-start h-full w-full"
+              >
+                <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold">Ramah Lingkungan</h4>
+                  <p class="opacity-70 text-sm">
+                    Mengurangi ketergantungan pada bahan kimia berbahaya
                   </p>
                 </div>
               </div>
 
-              <!-- Info Cards -->
-              <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div
-                  class="bg-base-200 p-4 rounded-xl shadow-md flex items-start"
-                >
-                  <div class="bg-success rounded-full p-2 mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-white"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Ramah Lingkungan</h4>
-                    <p class="opacity-70 text-sm">
-                      Mengurangi ketergantungan pada bahan kimia berbahaya
-                    </p>
-                  </div>
+              <div
+                class="bg-base-200 p-4 rounded-xl shadow-md flex items-start h-full w-full"
+              >
+                <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
                 </div>
-                <div
-                  class="bg-base-200 p-4 rounded-xl shadow-md flex items-start"
-                >
-                  <div class="bg-success rounded-full p-2 mr-3 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-white"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
-                      <path
-                        fill-rule="evenodd"
-                        d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-bold">Ekonomis</h4>
-                    <p class="opacity-70 text-sm">
-                      Menghemat pengeluaran untuk pembersih dan pupuk
-                    </p>
-                  </div>
+                <div>
+                  <h4 class="font-bold">Ekonomis</h4>
+                  <p class="opacity-70 text-sm">
+                    Menghemat pengeluaran untuk pembersih dan pupuk
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-base-200 p-4 rounded-xl shadow-md flex items-start h-full w-full"
+              >
+                <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V7h2v2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold">Mudah Digunakan</h4>
+                  <p class="opacity-70 text-sm">
+                    Proses pembuatan yang sederhana dan cepat
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-base-200 p-4 rounded-xl shadow-md flex items-start h-full w-full"
+              >
+                <div class="bg-success rounded-full p-2 mr-3 mt-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V7h2v2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold">Ramah Biaya</h4>
+                  <p class="opacity-70 text-sm">
+                    Mengurangi biaya pembersihan dan perawatan
+                  </p>
                 </div>
               </div>
             </div>
@@ -416,245 +465,187 @@
 
       <!-- Section 4-->
       <section class="py-16 bg-base-200 from-emerald-50 to-teal-50">
-        <div class="container mx-auto px-4 md:px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        <div
+          class="max-w-6xl mx-auto bg-base-100 rounded-2xl shadow p-8 md:p-10"
+        >
+          <!-- Heading diseragamkan -->
+          <div class="text-center mb-8">
+            <h2 class="text-4xl font-bold mb-2 md:mb-3">
               Cara Membuat Eco-Enzyme
             </h2>
-            <p class="text-lg font-bold max-w-2xl mx-auto">
-              Panduan lengkap langkah demi langkah untuk membuat eco-enzyme di
-              rumah dengan bahan-bahan sederhana
-            </p>
+            <div class="w-20 h-1 bg-success mx-auto rounded-full"></div>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div class="space-y-8">
-              <div
-                class="bg-green-100 rounded-2xl shadow-lg p-6 border-l-4 border-emerald-700"
+          <div class="grid grid-cols-1 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="bg-green-100 rounded-2xl shadow-lg p-5 md:p-6 border-l-4 border-emerald-700"
+            >
+              <h3
+                class="text-2xl font-bold text-emerald-800 mb-3 md:mb-4 flex items-center gap-2"
               >
-                <h3
-                  class="text-2xl font-bold text-emerald-800 mb-4 flex items-center gap-2"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                    />
-                  </svg>
-                  Bahan yang Dibutuhkan
-                </h3>
-                <div class="grid grid-cols-1 gap-3">
-                  <div
-                    class="flex items-center gap-3 p-3 bg-emerald-50 rounded-lg"
-                  >
-                    <div
-                      class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      1
-                    </div>
-                    <span class="text-emerald-800"
-                      ><strong>3 bagian</strong> kulit buah/sayur</span
-                    >
-                  </div>
-                  <div
-                    class="flex items-center gap-3 p-3 bg-emerald-50 rounded-lg"
-                  >
-                    <div
-                      class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      2
-                    </div>
-                    <span class="text-emerald-800"
-                      ><strong>1 bagian</strong> gula merah/molase</span
-                    >
-                  </div>
-                  <div
-                    class="flex items-center gap-3 p-3 bg-emerald-50 rounded-lg"
-                  >
-                    <div
-                      class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      3
-                    </div>
-                    <span class="text-emerald-800"
-                      ><strong>10 bagian</strong> air</span
-                    >
-                  </div>
-                </div>
-              </div>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  />
+                </svg>
+                Bahan yang Dibutuhkan
+              </h3>
 
-              <div
-                class="bg-green-100 rounded-2xl shadow-lg p-6 border-l-4 border-emerald-700"
-              >
-                <h3
-                  class="text-2xl font-bold text-emerald-800 mb-4 flex items-center gap-2"
+              <div class="grid grid-cols-1 gap-2.5 md:gap-3">
+                <div
+                  class="flex items-center gap-3 p-2.5 md:p-3 bg-emerald-50 rounded-lg"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                  <div
+                    class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                    />
-                  </svg>
-                  Cara Membuat
-                </h3>
-                <div class="space-y-4">
-                  <div class="flex gap-4">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      1
-                    </div>
-                    <p class="text-gray-700">
-                      Campur semua bahan ke dalam wadah plastik dengan urutan:
-                      gula, kulit buah, dan air
-                    </p>
+                    1
                   </div>
-                  <div class="flex gap-4">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      2
-                    </div>
-                    <p class="text-gray-700">
-                      Tutup rapat wadah, pastikan tidak menggunakan penutup dari
-                      logam
-                    </p>
+                  <span class="text-emerald-800"
+                    ><strong>3 bagian</strong> kulit buah/sayur</span
+                  >
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 md:p-3 bg-emerald-50 rounded-lg"
+                >
+                  <div
+                    class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold"
+                  >
+                    2
                   </div>
-                  <div class="flex gap-4">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      3
-                    </div>
-                    <p class="text-gray-700">
-                      Simpan di tempat sejuk dan teduh selama 3 bulan
-                    </p>
+                  <span class="text-emerald-800"
+                    ><strong>1 bagian</strong> gula merah/molase</span
+                  >
+                </div>
+
+                <div
+                  class="flex items-center gap-3 p-2.5 md:p-3 bg-emerald-50 rounded-lg"
+                >
+                  <div
+                    class="w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center font-bold"
+                  >
+                    3
                   </div>
-                  <div class="flex gap-4">
-                    <div
-                      class="flex-shrink-0 w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
-                    >
-                      4
-                    </div>
-                    <p class="text-gray-700">
-                      Aduk secara rutin setiap minggu untuk melepaskan gas
-                    </p>
-                  </div>
+                  <span class="text-emerald-800"
+                    ><strong>10 bagian</strong> air</span
+                  >
                 </div>
               </div>
             </div>
 
-            <div class="space-y-8">
-              <div
-                class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-red-400"
+            <!-- CARD 2: Cara Membuat -->
+            <div
+              class="bg-green-100 rounded-2xl shadow-lg p-5 md:p-6 border-l-4 border-emerald-700"
+            >
+              <h3
+                class="text-2xl font-bold text-emerald-800 mb-3 md:mb-4 flex items-center gap-2"
               >
-                <h3
-                  class="text-2xl font-bold text-red-700 mb-4 flex items-center gap-2"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
+                </svg>
+                Cara Membuat
+              </h3>
+
+              <div class="space-y-3 md:space-y-4">
+                <!-- STEP TEMPLATE -->
+                <div class="grid grid-cols-[40px_1fr] gap-3 md:gap-4">
+                  <div
+                    class="w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                    />
-                  </svg>
-                  Tips & Peringatan
-                </h3>
-                <div class="space-y-4">
-                  <div class="flex gap-3 p-3 bg-red-50 rounded-lg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <p class="text-red-700">
-                      Jangan buka wadah terlalu sering untuk mencegah
-                      kontaminasi
-                    </p>
+                    1
                   </div>
-                  <div class="flex gap-3 p-3 bg-red-50 rounded-lg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <p class="text-red-700">
-                      Hindari menggunakan bahan berminyak, pedas, atau daging
-                    </p>
+                  <p class="text-gray-700">
+                    Campur semua bahan ke dalam wadah plastik dengan urutan:
+                    gula, kulit buah, dan air
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-[40px_1fr] gap-3 md:gap-4">
+                  <div
+                    class="w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
+                  >
+                    2
                   </div>
-                  <div class="flex gap-3 p-3 bg-green-50 rounded-lg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <p class="text-green-700">
-                      Jika muncul jamur putih di permukaan → ini normal dan
-                      sehat
-                    </p>
+                  <p class="text-gray-700">
+                    Tutup rapat wadah, pastikan tidak menggunakan penutup dari
+                    logam
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-[40px_1fr] gap-3 md:gap-4">
+                  <div
+                    class="w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
+                  >
+                    3
                   </div>
+                  <p class="text-gray-700">
+                    Simpan di tempat sejuk dan teduh selama 3 bulan
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-[40px_1fr] gap-3 md:gap-4">
+                  <div
+                    class="w-8 h-8 bg-emerald-700 text-white rounded-full flex items-center justify-center font-bold"
+                  >
+                    4
+                  </div>
+                  <p class="text-gray-700">
+                    Aduk secara rutin setiap minggu untuk melepaskan gas
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <div
-                class="bg-green-100 rounded-2xl shadow-lg p-6 border-l-4 border-emerald-700"
+            <!-- Card 3 -->
+            <div
+              class="bg-white rounded-2xl shadow-lg p-5 md:p-6 border-l-4 border-red-400"
+            >
+              <h3
+                class="text-2xl font-bold text-red-700 mb-3 md:mb-4 flex items-center gap-2"
               >
-                <h3
-                  class="text-2xl font-bold text-emerald-800 mb-4 flex items-center gap-2"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  />
+                </svg>
+                Tips & Peringatan
+              </h3>
+
+              <div class="space-y-3 md:space-y-4">
+                <div class="flex gap-3 p-3 bg-red-50 rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
+                    class="h-5 w-5 text-red-500 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -663,55 +654,98 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                      d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  Video Tutorial
-                </h3>
+                  <p class="text-red-700 text-sm">
+                    Jangan buka wadah terlalu sering
+                  </p>
+                </div>
 
+                <div class="flex gap-3 p-3 bg-red-50 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-red-500 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <p class="text-red-700 text-sm">
+                    Hindari bahan berminyak, pedas, atau daging
+                  </p>
+                </div>
+
+                <div class="flex gap-3 p-3 bg-green-50 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-green-500 mt-0.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                  <p class="text-green-700 text-sm">Jamur putih → normal</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="bg-green-100 rounded-2xl shadow-lg p-5 md:p-6 border-l-4 border-emerald-700"
+            >
+              <h3
+                class="text-2xl font-bold text-emerald-800 mb-3 md:mb-4 flex items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+                Video Tutorial
+              </h3>
+
+              <a
+                href="https://youtu.be/YU9AzKf2ZFA?si=OXhFZMNYiiwX-caX"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block group"
+              >
                 <div
-                  class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden"
+                  class="w-full h-64 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center overflow-hidden"
                 >
-                  <a
-                    href="https://youtu.be/YU9AzKf2ZFA?si=OXhFZMNYiiwX-caX"
-                    target="_blank"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-16 w-16 text-white group-hover:scale-110 transition-transform duration-300"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
                   >
-                    <div
-                      class="w-full h-64 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center"
-                    >
-                      <div class="text-center text-white">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-16 w-16 mx-auto mb-2"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                          />
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        <p class="font-semibold">Video Tutorial YouTube</p>
-                        <p class="text-sm opacity-90">
-                          Cara Membuat Eco-Enzyme
-                        </p>
-                      </div>
-                    </div>
-                  </a>
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
                 </div>
-                <p class="text-gray-600 text-sm mt-3 text-center">
-                  Tonton panduan visual untuk membuat eco-enzyme dengan benar
-                </p>
-              </div>
+              </a>
+
+              <p class="text-gray-600 text-sm mt-3 text-center">
+                Tonton panduan visual untuk membuat eco-enzyme
+              </p>
             </div>
           </div>
 
@@ -720,20 +754,22 @@
               Timeline Proses Fermentasi
             </h3>
             <div
-              class="flex flex-col md:flex-row justify-between items-center gap-6"
+              class="flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6 md:gap-4"
             >
               <div class="text-center flex-1">
                 <div
                   class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3"
                 >
-                  <span class="text-emerald-700 font-bold">1</span>
+                  <span class="text-emerald-700 font-bold text-lg">1</span>
                 </div>
-                <h4 class="font-semibold text-emerald-800">Minggu 1-4</h4>
+                <h4 class="font-semibold text-emerald-800 mb-2">Minggu 1-4</h4>
                 <p class="text-sm text-gray-600">
                   Fermentasi aktif, banyak gas dihasilkan
                 </p>
               </div>
-              <div class="hidden md:block text-emerald-400">
+              <div
+                class="hidden md:flex text-emerald-400 items-center justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -753,17 +789,19 @@
                 <div
                   class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3"
                 >
-                  <span class="text-green-700 font-bold">2</span>
+                  <span class="text-green-700 font-bold text-lg">2</span>
                 </div>
-                <h4 class="font-semibold text-green-800">Bulan 1-2</h4>
+                <h4 class="font-semibold text-green-800 mb-2">Bulan 1-2</h4>
                 <p class="text-sm text-gray-600">
                   Fermentasi stabil, aroma asam mulai muncul
                 </p>
               </div>
-              <div class="hidden md:block text-amber-400">
+              <div
+                class="hidden md:flex text-emerald-400 items-center justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 text-emerald-500"
+                  class="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -780,9 +818,9 @@
                 <div
                   class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3"
                 >
-                  <span class="text-green-700 font-bold">3</span>
+                  <span class="text-green-700 font-bold text-lg">3</span>
                 </div>
-                <h4 class="font-semibold text-green-800">Bulan 3</h4>
+                <h4 class="font-semibold text-green-800 mb-2">Bulan 3</h4>
                 <p class="text-sm text-gray-600">Eco-enzyme siap digunakan</p>
               </div>
             </div>
@@ -792,7 +830,7 @@
     </main>
 
     <footer
-      class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10"
+      class="footer footer-horizontal footer-center bg-base-100 text-base-content rounded p-10"
     >
       <nav class="grid grid-flow-col gap-4">
         <a class="link link-hover">Tentang Kami</a>
