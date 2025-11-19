@@ -59,12 +59,16 @@
               </label>
             </div>
             <div class="mx-2 flex-1 px-2">
-              <a class="btn btn-ghost text-xl font-bold text-success">GreenLife</a>
+              <a
+                href="index.html"
+                class="btn btn-ghost text-xl font-bold text-success"
+                >GreenLife</a
+              >
             </div>
             <div class="hidden flex-none lg:block">
               <ul class="menu menu-horizontal">
                 <!-- Navbar menu content here -->
-                <li><a>Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
               </ul>
             </div>
           </div>
@@ -729,17 +733,25 @@
                 rel="noopener noreferrer"
                 class="block group"
               >
-                <div
-                  class="w-full h-64 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center overflow-hidden"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-16 w-16 text-white group-hover:scale-110 transition-transform duration-300"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
+                <div class="w-full h-64 rounded-lg overflow-hidden relative">
+                  <img
+                    src="https://img.youtube.com/vi/YU9AzKf2ZFA/maxresdefault.jpg"
+                    alt="Thumbnail Video"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+
+                  <div
+                    class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition"
                   >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-16 w-16 text-white"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
                 </div>
               </a>
 
