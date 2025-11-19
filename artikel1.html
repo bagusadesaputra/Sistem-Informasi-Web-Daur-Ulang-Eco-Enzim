@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html data-theme="cupcake" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>GreenLife - Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="drawer">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <!-- Navbar -->
+          <div class="navbar bg-base-100 w-full">
+            <div class="flex-none lg:hidden">
+              <label
+                for="my-drawer-2"
+                aria-label="open sidebar"
+                class="btn btn-square btn-ghost"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-6 w-6 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </label>
+            </div>
+            <div class="mx-2 flex-1 px-2">
+              <a
+                href="index.html"
+                class="btn btn-ghost text-xl font-bold text-success"
+                >GreenLife</a
+              >
+            </div>
+            <div class="hidden flex-none lg:block">
+              <ul class="menu menu-horizontal">
+                <!-- Navbar menu content here -->
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="drawer-side">
+          <label
+            for="my-drawer-2"
+            aria-label="close sidebar"
+            class="drawer-overlay"
+          ></label>
+          <ul class="menu bg-base-200 min-h-full w-80 p-4 text-lg space-y-2">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="py-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Breadcrumb -->
+        <nav class="text-sm breadcrumbs mb-4">
+          <ul>
+            <li><a href="index.html" class="text-success">Beranda</a></li>
+            <li><a href="blog.html" class="text-success">Blog</a></li>
+            <li class="text-gray-500">Eco-Enzyme dari Sampah Organik</li>
+          </ul>
+        </nav>
+
+        <article class="bg-base-100 rounded-2xl shadow-lg p-10">
+          <header class="mb-6">
+            <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+              Eco-Enzyme dari Sampah Organik: Solusi Ramah Lingkungan dan Hemat
+              Biaya
+            </h1>
+
+            <div
+              class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-3"
+            >
+              <div class="meta">
+                <span>Dipublikasikan: 24 Oktober 2025</span>
+                <span class="mx-2">•</span>
+                <span>Waktu baca: 6 menit</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <a
+                  href="#share"
+                  class="btn btn-ghost btn-sm text-sm"
+                  aria-label="Bagikan artikel"
+                  >Bagikan</a
+                >
+              </div>
+            </div>
+
+            <div class="w-24 h-1 bg-success rounded-full mt-6"></div>
+          </header>
+
+          <!-- Hero / thumbnail (optional) -->
+          <figure class="mb-6 overflow-hidden rounded-lg">
+            <img
+              src="img/stock-photo-eco-enzyme-fermentation-process-in-bottles-and-jars-eco-enzyme-is-a-solution-of-complex-organic-2019746063.jpg"
+              alt="Eco enzyme dari sampah organik"
+              class="w-full h-60 object-cover"
+            />
+          </figure>
+
+          <!-- Article content -->
+          <div class="article-prose prose max-w-none text-base">
+            <p>
+              Eco-enzyme adalah cairan hasil fermentasi bahan organik sederhana
+              — biasanya kulit buah, sisa sayuran, gula, dan air — yang melalui
+              proses alami menghasilkan enzim dan senyawa bermanfaat. Produk
+              rumahan ini dapat dipakai sebagai pembersih, desinfektan ringan,
+              atau pupuk cair yang murah dan lebih ramah lingkungan dibandingkan
+              produk kimia komersial.
+            </p>
+            <br>
+            <h2>Apa itu Eco-Enzyme?</h2>
+            <p>
+              Secara garis besar, eco-enzyme terbentuk ketika mikroorganisme
+              memfermentasi bahan organik dalam kondisi tertutup selama beberapa
+              minggu hingga bulan. Hasilnya adalah larutan asam organik dan
+              enzim yang bereaksi membantu memecah kotoran dan meningkatkan
+              aktivitas biologis tanah ketika digunakan sebagai pupuk.
+            </p>
+            <br>
+            <h2>Manfaat Lingkungan dan Ekonomi</h2>
+            <p>
+              Mengolah sampah organik menjadi eco-enzyme membantu mengurangi
+              volume limbah yang masuk ke tempat pembuangan akhir. Selain itu,
+              bahan baku yang dapat dipakai biasanya tersedia di rumah sehingga
+              biaya produksi sangat rendah. Bagi komunitas kecil, eco-enzyme
+              juga berpotensi menjadi produk ekonomi lokal.
+            </p>
+            <br>
+            <h2>Cara Membuat (Prinsip Dasar)</h2>
+            <p>Berikut langkah ringkas membuat eco-enzyme di rumah:</p>
+            <br>
+            <ol>
+              <li>
+                <strong>Siapkan bahan:</strong> kulit buah/sayuran, gula (gula
+                merah atau molase), dan air bersih.
+              </li>
+              <li>
+                <strong>Komposisi umum:</strong> 3 bagian sampah organik : 1
+                bagian gula : 10 bagian air.
+              </li>
+              <li>
+                <strong>Fermentasi:</strong> Masukkan bahan ke wadah plastik
+                atau ember, aduk hingga rata, tutup rapat dan simpan di tempat
+                teduh. Buka sesekali untuk melepaskan gas di minggu-minggu awal.
+              </li>
+              <li>
+                <strong>Pemrosesan akhir:</strong> Setelah sekitar 3 bulan
+                (bergantung kondisi), saring cairan sebagai eco-enzyme dan
+                pisahkan ampasnya.
+              </li>
+            </ol>
+            <br>
+            <h2>Cara Pemakaian</h2>
+            <p>
+              Eco-enzyme dapat digunakan untuk berbagai keperluan rumah tangga.
+              Contoh pemakaian:
+            </p>
+            <ul>
+              <li>
+                Mencuci lantai: campurkan 1–2 sendok makan eco-enzyme per ember
+                air.
+              </li>
+              <li>
+                Semprotan pembersih: encerkan dengan air (1:10 sampai 1:30
+                tergantung kebutuhan).
+              </li>
+              <li>
+                Pupuk cair: encerkan dengan perbandingan lebih ringan dan
+                siramkan ke tanaman sebagai penyubur.
+              </li>
+            </ul>
+            <br>
+            <h2>Catatan Keamanan dan Kualitas</h2>
+            <p>
+              Selama fermentasi akan terbentuk gas; gunakan wadah yang sesuai
+              dan jangan penyimpanan dalam kondisi sangat panas. Ampas hasil
+              fermentasi sebaiknya dikomposkan kembali atau dijadikan media
+              tanam. Jika bau terlalu tajam atau muncul kontaminasi (bau
+              busuk/warna mencurigakan), hentikan dan evaluasi bahan yang
+              dipakai.
+            </p>
+            <br>
+            <h2>Tantangan dan Potensi</h2>
+            <p>
+              Eco-enzyme menawarkan solusi sederhana, namun ketersediaan bahan
+              bersih dan praktik pemilahan sampah di sumber menjadi kunci
+              keberhasilan. Pendampingan komunitas dan edukasi diperlukan agar
+              penggunaan skala rumah tangga bisa meluas dan menghasilkan manfaat
+              lingkungan yang real.
+            </p>
+            <br>
+            <h2>Kesimpulan</h2>
+            <p>
+              Dengan langkah sederhana dan bahan yang mudah diperoleh,
+              eco-enzyme memberi kesempatan untuk mengubah sampah menjadi sumber
+              daya. Selain meminimalkan limbah, produk ini memberi alternatif
+              pembersih dan pupuk yang hemat biaya dan ramah lingkungan.
+            </p>
+          </div>
+
+          <!-- Related -->
+          <div class="mt-8 border-t pt-6">
+            <h3 class="font-semibold text-lg mb-3">Artikel Terkait</h3>
+            <div class="grid gap-3">
+              <a
+                href="artikel-hidroponik.html"
+                class="p-4 rounded-lg border hover:bg-base-200 transition"
+              >
+                Manfaat Hidroponik untuk Pemula
+              </a>
+              <a
+                href="artikel-gaya-hidup.html"
+                class="p-4 rounded-lg border hover:bg-base-200 transition"
+              >
+                Kenapa Gaya Hidup Ramah Lingkungan Penting
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer
+      class="footer footer-horizontal footer-center bg-base-100 text-base-content rounded p-10"
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">Tentang Kami</a>
+        <a class="link link-hover">Layanan</a>
+        <a class="link link-hover">Kontak Kami</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <p>Copyright ©</p>
+      </aside>
+    </footer>
+  </body>
+</html>
